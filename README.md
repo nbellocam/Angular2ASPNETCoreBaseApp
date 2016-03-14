@@ -1,6 +1,6 @@
 # ASP.NET Core with Angular 2 Base App
 
-Base ASP.NET Core project with Angular 2 and TypeScript build-in
+Base ASP.NET Core project with Angular 2 and TypeScript build-in. You can find more information on [my post](http://blog.nbellocam.me/2016/03/14/asp-net-core-and-angular-2/).
 
 ## Creating the base structure for this kind of project
 

@@ -15,6 +15,26 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
+
+    <environment names="Development">
+        <script src="~/lib/npmlibs/es6-shim.js"></script>
+        <script src="~/lib/npmlibs/systemjs/system-polyfills.src.js"></script>
+        <script src="~/lib/npmlibs/angular2/angular2-polyfills.js"></script>
+
+        <script src="~/lib/npmlibs/systemjs/system.src.js"></script>
+        <script src="~/lib/npmlibs/rxjs/Rx.js"></script>
+        <script src="~/lib/npmlibs/angular2/angular2.js"></script>
+    </environment>
+
+    <environment names="Staging,Production">
+        <script src="~/lib/npmlibs/es6-shim.min.js"></script>
+        <script src="~/lib/npmlibs/systemjs/system-polyfills.js"></script>
+        <script src="~/lib/npmlibs/angular2/angular2-polyfills.min.js"></script>
+
+        <script src="~/lib/npmlibs/systemjs/system.src.js"></script>
+        <script src="~/lib/npmlibs/rxjs/Rx.min.js"></script>
+        <script src="~/lib/npmlibs/angular2/angular2.min.js"></script>
+    </environment>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">

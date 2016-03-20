@@ -20,3 +20,11 @@ In order to easily recreate this structure, you can follow the commits in this r
 ## Adding routing suport to your Angular application
 
 To keep this sample simple and include the feedback and code from [@BradRem](http://github.com/BradRem), I added a new branch named [routing-sample](https://github.com/nbellocam/Angular2ASPNETCoreBaseApp/tree/routing-sample) with the base structure for Angular 2 routing.
+
+## Adding http suport to your Angular application
+
+I added a new branch named [http-sample](https://github.com/nbellocam/Angular2ASPNETCoreBaseApp/tree/http-sample) with the base structure for using the HTTP service in Angular 2 to consume an ASP.NET Core API.
+
+## Full sample (with routing and http)
+
+You can find the full solution with Angular 2 configured to use HTTP and Route components in an ASP.NET Core application in Visual Studio in the [full-sample](https://github.com/nbellocam/Angular2ASPNETCoreBaseApp/tree/full-sample) branch.

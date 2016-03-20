@@ -3,7 +3,6 @@
 /// <reference path="app/another-sample.js" />
 /// <reference path="app/app.component.js" />
 /// <reference path="app/boot.js" />
-/// <reference path="app/deeplink.component.js" />
 /// <reference path="app/sample.components.js" />
 /// <reference path="js/site.js" />
 /// <reference path="lib/bootstrap/dist/js/bootstrap.js" />

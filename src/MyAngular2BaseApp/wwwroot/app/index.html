@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyAngular2BaseApp</title>
+    <base href="/" />
+
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+    <script src="/lib/npmlibs/es6-shim/es6-shim.js"></script>
+    <script src="/lib/npmlibs/systemjs/system-polyfills.src.js"></script>
+    <script src="/lib/npmlibs/angular2/angular2-polyfills.js"></script>
+
+    <script src="/lib/npmlibs/systemjs/system.src.js"></script>
+    <script src="/lib/npmlibs/rxjs/Rx.js"></script>
+    <script src="/lib/npmlibs/angular2/angular2.js"></script>
+    <script src="/lib/npmlibs/angular2/router.dev.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-controller="Home" asp-action="Index" class="navbar-brand">MyAngular2BaseApp</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <section id="content">
+            <div class="container">
+                <div class="row">
+                    <h2>This is an static html file</h2>
+                    <my-app>
+                        <div class="alert alert-info" role="alert">
+                            <h3>Loading...</h3>
+                        </div>
+                    </my-app>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <footer>
+            <p>&copy; 2016 - MyAngular2BaseApp</p>
+        </footer>
+    </div>
+
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/js/site.js" asp-append-version="true"></script>
+
+    <script>
+        System.config({
+            packages: {
+                'app': { defaultExtension: 'js' },
+                'lib': { defaultExtension: 'js' },
+            },
+        });
+
+        System.import('app/boot')
+            .then(null, console.error.bind(console));
+    </script>
+</body>
+</html>
